@@ -1,0 +1,164 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  background-color: rgba(0,0,0, 0.4);
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.modal__container {
+  position: relative;
+  display: none;
+  vertical-align: middle;
+  margin: 50px auto;
+  width: 47%;
+  background-color: var(--color-white);
+  cursor: default;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.modal-picture-card {
+  min-height: 500px;
+}
+
+.modal.is-open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal__container.modal-open {
+  display: inline-block;
+}
+
+.modal__container.animate-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.modal-close-btn:focus-visible {
+  outline: none;
+}
+
+.modal-close-btn__svg {
+  pointer-events: none;
+}
+
+.modal-close-btn__svg_color {
+  transition: stroke 0.3s ease-in-out;
+}
+
+.modal-close-btn:focus-visible .modal-close-btn__svg_color {
+  stroke: var(--color-amethyst);
+}
+
+.modal-close-btn:active .modal-close-btn__svg_color {
+  stroke: var(--color-studio);
+}
+
+.modal-picture-info {
+  display: flex;
+  align-content: center;
+  min-height: 500px;
+}
+
+.modal-picture-info__left {
+  width: 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.modal-picture-info__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 50px;
+  width: 55%;
+}
+
+.modal-picture-info__artist-name {
+  text-align: left;
+  color: var(--color-night-rider);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.modal-picture-info__picture-name {
+  text-align: left;
+  color: var(--color-night-rider);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-picture-info__picture-date {
+  margin-bottom: 39px;
+  text-align: left;
+  color:  #969696;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.modal-picture-info__descr {
+  text-align: left;
+  color: var(--color-night-rider);
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.modal-alert {
+  display: none;
+  padding: 50px;
+}
+
+.modal-alert__title {
+  margin-bottom: 20px;
+  color: var(--color-night-rider);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.modal-alert__text {
+  color: var(--color-night-rider);
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.disable-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}

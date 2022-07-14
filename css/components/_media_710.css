@@ -1,0 +1,29 @@
+@media (max-width: 710px) {
+  .hero__tagline {
+    font-size: 65px;
+  }
+
+  .categories__list {
+    max-height: 195px;
+  }
+
+  .gallery__swiper-wrapper {
+    width: 95%;
+  }
+
+  .gallery-slide__img {
+    min-width: unset;
+    max-height: unset;
+}
+
+  .catalog__top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 19px;
+  }
+
+  .catalog-title {
+    margin-bottom: 9px;
+  }
+
+}

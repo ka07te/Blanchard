@@ -1,0 +1,205 @@
+.projects__container {
+  padding-top: 89px;
+  padding-bottom: 89px;
+}
+
+.projects__title {
+  margin-bottom: 25px;
+  padding-left: 1px;
+}
+
+.projects__info {
+  margin-bottom: 18px;
+  max-width: 1079px;
+  color: var(--color-night-rider);
+  line-height: 32px;
+}
+
+.projects-tooltip {
+  display: inline-block;
+  transform: translateY(3px);
+}
+
+.projects-tooltip__btn {
+  position: relative;
+}
+
+.projects-tooltip .projects-tooltip__text {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  padding: 10px 7px;
+  text-align: center;
+  width: 264px;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: var(--color-amethyst);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.projects-tooltip .projects-tooltip__text_3 {
+  width: 242px;
+}
+
+.projects-tooltip__btn::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 7px 0 7px;
+  border-color: var(--color-amethyst) transparent transparent transparent;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.projects-tooltip__btn-close {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.projects-tooltip .projects-tooltip__color {
+  transition: fill 0.3s ease-in-out;
+}
+
+.projects-tooltip .projects-tooltip__background {
+  transition: fill 0.3s ease-in-out;
+}
+
+.projects-tooltip .projects-tooltip__border {
+  transition: stroke 0.3s ease-in-out;
+}
+
+.projects-tooltip__btn:focus {
+  outline: none;
+}
+
+.projects-tooltip__btn:focus .projects-tooltip__background {
+  fill: var(--color-mauve);
+}
+
+.projects-tooltip__btn:focus + .projects-tooltip__text,
+.projects-tooltip__btn:focus::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects-tooltip:active .projects-tooltip__text,
+.projects-tooltip:active .projects-tooltip__btn::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects-tooltip:active .projects-tooltip__color {
+  fill: var(--color-white);
+}
+
+.projects-tooltip:active .projects-tooltip__background {
+  fill: var(--color-amethyst);
+}
+
+.projects-tooltip:active .projects-tooltip__border {
+  stroke: var(--color-amethyst);
+}
+
+.projects-site__link {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  color: var(--color-amethyst);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.projects-site__link:focus-visible {
+  box-shadow: 0px 0px 0px 2px var(--color-amethyst);
+  outline: none;
+  color: var(--color-white);
+  background-color: var(--color-amethyst);
+}
+
+.projects-site__link:active {
+  border-color: var(--color-studio);
+  box-shadow: none;
+  color: var(--color-studio);
+  background-color: var(--color-white);
+}
+
+.projects__subtitle {
+  margin-bottom: 23px;
+  padding-left: 1px;
+  color: var(--color-night-rider);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.projects-slider{
+  position: relative;
+}
+
+.projects-button__next,
+.projects-button__prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.projects-button__next, .swiper-container-rtl .projects-button__prev {
+  right: -9px;
+}
+
+.projects-button__prev, .swiper-container-rtl .projects-button__next {
+  left: -11px;
+}
+
+.swiper-button-light__backgroud {
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.swiper-button-light:focus-visible:not(.swiper-button-disabled) .swiper-button-light__backgroud {
+  stroke: var(--color-amethyst);
+}
+
+.swiper-button-light:active .swiper-button-light__backgroud {
+  fill: var(--color-mauve);
+  stroke: var(--color-amethyst);
+}
+
+.projects-button__next.swiper-button-disabled .swiper-button-light__triangle,
+.projects-button__prev.swiper-button-disabled .swiper-button-light__triangle {
+  stroke: var(--color-unactive);
+}
+
+.projects-swiper-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 92.4%;
+}
+
+.partners-slide__logo {
+  display: block;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}

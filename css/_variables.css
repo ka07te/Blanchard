@@ -1,0 +1,23 @@
+/* Для описания используемых переменных */
+:root {
+  --color-white: #fff;
+  --color-black: #000; /*шапка и футер*/
+  --color-night-rider: #333; /*текст*/
+  --color-amethyst: #9d5cd0; /* в событиях Подробнее в блоке editions фон цены, обрамление кнопок*/
+  --color-vl-grey: #cacaca;
+  --color-whisper:#ececec;
+  --color-pink-swan: #b6b6b6;
+  --color-studio: #7943a4; /* для состояния active в выпадающих списках */
+  --color-nobel: #999; /*блеклый текст */
+  --color-wisteria: #c283f3; /* кнопки, выделения, в блоке editions кнопка выбора в категориях */
+  --color-dim-gray: #666;
+  --color-mauve: #d1a9f0;
+  --color-lime-green: #30bf39;
+  --color-pink-sw: #b7b7b7;
+  --color-dark-gray: #b0b0b0;
+  --color-can-can: #d88f99;
+  --color-whisp : #eaeaea;
+  --color-harley-davidson-orange : #d11616;
+  --color-nero: #161616;
+  --color-unactive: #bbb;
+}

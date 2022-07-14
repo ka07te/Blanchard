@@ -1,0 +1,63 @@
+@media (max-width: 1410px) {
+
+  .logo__link {
+    margin-right: 30px;
+  }
+
+  .header-nav__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .header-bottom-nav__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .search-form__label {
+    width: 180px;
+  }
+
+  .hero-swiper-slade {
+    min-width: 160%;
+  }
+
+  .hero__descr {
+    max-width: 50%;
+  }
+
+  .tab-content__descr {
+    padding-right: 0;
+  }
+
+  .accordion-right__wrap {
+    width: 55%;
+  }
+
+  .events__list {
+    gap: 27px;
+  }
+
+  .editions-left {
+    width: 30%;
+  }
+
+  .editions-right {
+    width: 70%;
+  }
+
+  .contacts-left {
+    padding-right: 99px;
+  }
+
+  .modal__container {
+    width: 59%;
+  }
+
+  .modal-picture-card {
+    min-height: 594px;
+  }
+
+  .modal-picture-info__left {
+    min-height: 594px;
+  }
+
+}
